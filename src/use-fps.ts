@@ -7,9 +7,12 @@ type State = {
   prevTime: number
 }
 
-const increment = () => ({ type: 'INCREMENT' as 'INCREMENT' })
+const RESET = 'RESET' as const
+const INCREMENT = 'INCREMENT' as const
+
+const increment = () => ({ type: INCREMENT })
 const reset = (fps: number, time: number) => ({
-  type: 'RESET' as 'RESET',
+  type: RESET,
   fps,
   time,
 })
@@ -22,9 +25,9 @@ const initialState: State = {
 
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
-    case 'INCREMENT':
+    case INCREMENT:
       return { ...state, frames: state.frames + 1 }
-    case 'RESET':
+    case RESET:
       return { frames: 0, fps: action.fps, prevTime: action.time }
     default:
       return state
