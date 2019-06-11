@@ -1,6 +1,6 @@
 {
   "name": "use-fps",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Konstantin Lebedev <https://github.com/koss-lebedev>",
   "bugs": {
     "url": "https://github.com/koss-lebedev/use-fps/issues"
