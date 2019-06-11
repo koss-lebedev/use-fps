@@ -1,0 +1,26 @@
+{
+  "name": "use-fps",
+  "version": "0.0.1",
+  "author": "Konstantin Lebedev <https://github.com/koss-lebedev>",
+  "bugs": {
+    "url": "https://github.com/koss-lebedev/use-fps/issues"
+  },
+  "description": "A React hook for displaying FPS (frame per second) value",
+  "homepage": "https://github.com/koss-lebedev/use-fps#readme",
+  "main": "build/use-fps.js",
+  "repository": "https://github.com/koss-lebedev/use-fps.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.7",
+    "@types/react": "^16.8.19",
+    "typescript": "^3.5.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}
